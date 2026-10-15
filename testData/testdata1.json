@@ -1,0 +1,18 @@
+{
+    "formstitle":"Form Elements",
+    "fullname":"Mahadevan",
+    "email":"sheethu@gmail.com",
+    "password":"Password123",
+    "phonenumber":"996778891",
+    "dob": "1995-10-01",
+    "country": "India",
+    "gender":"Male",
+    "skills":" JavaScript",
+    "entertext":"Please proceed with the registration",
+    "successmessage":"Registration successful! Welcome aboard.",
+    "fullnameerror":"Name is required",
+    "emailerror":"Valid email is required",
+    "passworderror":"Password must be at least 8 characters",
+    "checkboxerror":"You must accept the terms"
+}
+   
