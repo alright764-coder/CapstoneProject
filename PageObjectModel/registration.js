@@ -15,18 +15,18 @@ class Registration{
         this.termsCheckbox=page.locator('#terms')
         this.registerButton=page.getByRole('button', {name:"Register"});
     };
-      async goto(){
+
+    // Navigate to the application
+    async goto(){
         await this.page.goto('/');
     };
 
     // View Menu Option
-
      async openMenu() {
         await this.menuLink.click();
     };
 
     // Open the Form Elements section
-
     async openFormElements() {
         await this.formElementsLink.click();
     };
@@ -41,13 +41,13 @@ class Registration{
         await this.phoneNumberInput.fill(phonenumber);
         await this.dateOfBirthInput.fill(dob);
         await this.countryDropdown.selectOption({label:country});
-         await this.page.getByLabel(gender, { exact: true }).check();
-    // Select the skill checkbox
+        await this.page.getByLabel(gender, { exact: true }).check();
         await this.page.getByLabel(skills, { exact: true }).check();
         await this.bioInput.fill(entertext);
         await this.termsCheckbox.click();
         await this.registerButton.click();
     };
+
     //Negative scenario testing
 
     async registerWithoutMandatoryCredentials(phonenumber,dob,country,gender,skills,entertext) {
@@ -59,10 +59,10 @@ class Registration{
         await this.bioInput.fill(entertext);
         await this.registerButton.click();
         
-};
+    };
 
     async registerWithEmptyCredentials() {
     await this.registerButton.click();
         
-};
+    };
 } module.exports=Registration;

@@ -8,6 +8,4 @@ class ScreenshotUtil {
         await this.page.screenshot({path: `screenshots/${name}.png`,fullPage: true
         });
     }
-}
-
-module.exports = ScreenshotUtil;
+}module.exports = ScreenshotUtil;

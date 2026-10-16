@@ -1,0 +1,7 @@
+[
+  'Lamborghini Huracan',
+  'Triumph Speed Triple 1200',
+  'Seiko Presage Cocktail Time',
+  'Oceanis Luxury Yacht'
+]
+4

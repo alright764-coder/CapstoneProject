@@ -1,0 +1,11 @@
+{
+    "useremail":"test@playlab.com",
+    "password":"Password123",
+    "signinmessage":"Signed in as test@playlab.com",
+    "emailerror":"Email is required",
+    "passworderror":"Password is required",
+    "invalidemail":"doe@gmil.com",
+    "invalidpassword":"kevincboe",
+    "invalidcredentialmsg":"Invalid credentials. Try: test@playlab.com / Password123"
+    
+}

@@ -15,28 +15,27 @@ class POMManager{
         this.flaky= new Flaky(page);
         this.shopping= new Shopping(page);
         this.takeScreenshot= new TakeScreenshot(page);
-    
+    };
 
-    }
     getLogin(){
         return this.login;
-    }
+    };
 
     getRegister(){
         return this.registration;
-    }
+    };
     getLogout(){
         return this.logout;
-    }
+    };
     getFlaky(){
         return this.flaky;
-    }
+    };
     getShopping(){
         return this.shopping;
-    }
+    };
     getScreenshot() {
     return this.takeScreenshot;
-}
+    };
 
 
 }module.exports=POMManager;
