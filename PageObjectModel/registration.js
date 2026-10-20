@@ -28,7 +28,8 @@ class Registration{
 
     // Open the Form Elements section
     async openFormElements() {
-        await this.formElementsLink.click();
+        await this.page.locator('#forms').scrollIntoViewIfNeeded();
+        await this.formElementsLink.click({ timeout: 10000 });
     };
 
     // Register with valid details

@@ -13,7 +13,7 @@ const config=({
         screenshot: 'only-on-failure',
         trace:'on',
         video: 'on',
-        headless:false,
+        headless:true,
         baseURL: process.env.Base_URL
     },
 })

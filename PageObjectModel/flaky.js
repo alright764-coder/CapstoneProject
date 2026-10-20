@@ -29,6 +29,11 @@ class Flaky{
 // Trigger the dynamic element
     async triggerSpawnButton() {
         await this.spawnButton.click();
+
+        await this.clickmebutton.waitFor({
+            state: 'visible',
+            timeout: 10000
+    });
     }
 
 }module.exports=Flaky;

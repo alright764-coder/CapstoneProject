@@ -1,11 +1,14 @@
 class ScreenshotUtil {
 
-    constructor(page){
+    constructor(page) {
         this.page = page;
     }
 
     async takeScreenshot(name) {
-        await this.page.screenshot({path: `screenshots/${name}.png`,fullPage: true
+        await this.page.screenshot({
+            path: `screenshots/${name}.png`
         });
     }
-}module.exports = ScreenshotUtil;
+}
+
+module.exports = ScreenshotUtil;
