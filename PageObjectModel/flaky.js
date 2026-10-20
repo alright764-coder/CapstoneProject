@@ -8,7 +8,7 @@ class Flaky{
         this.randombox=page.locator('#randomAppearBox');
         this.spawnButton = page.getByRole('button', { name: 'Spawn Button'});
         this.clickmebutton= page.getByRole('button',{name:"Click Me!"});
-        this.changingText=page.getByTestId("changing-text-box");
+    
     }
 
 // Navigate to the application   

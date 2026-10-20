@@ -117,18 +117,17 @@ test('@Register with empty fields',async({page,pomanager})=>{
 })
 });
 
-test('@flaky functionality', async({page,pomanager})=>{
-  //const pomanager=new POMManager(page);
-  //const screenshot= pomanager.getScreenshot();
+test('@flaky functionality', async({pomanager})=>{
+  
   const flaky= pomanager.getFlaky();
   await flaky.goto();
   await flaky.openMenu();
   await flaky.openFlakyElements();
   await expect(flaky.sectionTitle).toHaveText(testdataflaky.title);
   await expect(flaky.randombox).toHaveText(testdataflaky.randomAppearText);
-  await pomanager.getScreenshot().takeScreenshot("Flaky_Page_Heading");
   await flaky.triggerSpawnButton();
   await expect(flaky.clickmebutton).toBeVisible();
+  await pomanager.getScreenshot().takeScreenshot("Flaky_Page_final view");
 
 });
 
